@@ -1,7 +1,9 @@
 ###GettingAndCleaningData
 **(For Project Assignment of Coursera Course Getting and Cleaning Data)**
 
-##Instructions to execute "run_analysis.R"
+-------------------------------------------------------------------------
+
+###Instructions to execute "run_analysis.R"
 **Please follow the following steps to execute "run_analysis.R" script**
 #####1. Open run_analysis.R with RStudio
 #####2. Select "Session" -> Set Working Directory -> To Source file location
