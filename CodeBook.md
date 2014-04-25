@@ -1,13 +1,13 @@
 ##CodeBook for run_analysis.R
 
+**“tidyData.txt” is a data frame with dimension of 180 rows and 68 columns variable.  Since there are total 30 subjects and 6 types of activities, each row is corresponding to one combination of subject and activity as specified by “subject” and “activity” column variable. The remaining 66 feature columns are the average of only measurements on mean() or std() that are extracted from the original Samsung data sets.**
 
+**The Column Variables are described in the following table.**
 
-
-###The following table shows the name and description of each column in tidyData.txt file
 |Column Index |Column Names | Variable Description |
 |------------|:----------:| -----------:|
-|1|subject| |
-|2|activity| |
+|1|subject| range from 1 to 30|
+|2|activity| 6 types of activities, "WALKING","WALKING UP", WALKING DOWN, SITTING, STANDING, LAYING|
 |3| avgtBodyAccmeanX | Average of Body Acceleration mean in X direction|
 |4| avgtBodyAccmeanY | Averag of Body Acceleration mean in Y direction|
 |5| avgtBodyAccmeanZ | Averag of Body Accelerationstd mean in Z direction|
@@ -74,3 +74,17 @@
 |66| avgfBodyBodyGyroMagstd |  Average of frequency domain Body Gyroscope velocity magnitude std|
 |67| avgfBodyBodyGyroJerkMagmean |Average of frequency domain Body Gyroscope Jerk magnitude mean |
 |68| avgfBodyBodyGyroJerkMagstd | Average of frequency domain Body Gyroscope Jerk magnitude std|
+
+---------------------------------------------
+
+###Data Transformation:
+**The tidy data set “tidyData” is pre-processed from original raw data in the following procedures**
+
+1. Read Samsung Data Sets to different data frames in R environment
+2. Merges the training and the test sets and create one data set called "allData"
+3. Extracts only the measurements on the mean and standard deviation for each measurement to data set "meanstdData"
+4. Creates a second, independent tidy data set "tidyData" with the average of each variable for each activity and each subject
+5. Replaces activity number with corresponding descritpive activity names in acitivity column, removes underscore and "STAIRS" to make the display nicer, add "avg" prefix to measurements averages and remove unnecessary characters like "-()_".
+6. Write the tidy Data to "tidyData.txt" in current directory
+
+
