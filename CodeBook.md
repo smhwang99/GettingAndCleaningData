@@ -2,6 +2,14 @@
 
 **“tidyData.txt” is a data frame with dimension of 180 rows and 68 columns variable.  Since there are total 30 subjects and 6 types of activities, each of the 180 rows is corresponding to one combination of subject and activity as specified by “subject” and “activity” column variable. The remaining 66 feature columns are the average of only measurements on mean() or std() that extracted from the original Samsung data sets. Therefore, the data frame represent 66 averaged mesurements for each subject and each activity**
 
+**The naming convention of column variables follows the one described in features_info.txt from Samsung data sets and briefly listed as follows:**
+- "t" or "f" stands for time domain or frequency domain measurements.
+- tBodyAcc-XYZ and tGravityAcc-XYZ - body and gravity acceleration signals that were separate from the acceleration signal
+- tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ - the Jerk signals obtained from the body linear acceleration and angular velocity
+- tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag - the magnitude of these three-dimensional signals were calculated using the Euclidean norm (). 
+-  mean and std stand for mean statistic and standard deviation statistic
+- **There is one major difference in the naming convention from the one in the raw data. The difference is that all column variables are pre-fixed with *"avg"* to emphasize that extra averaging operation is performed on top of the data extracted from the raw data on per subject per activity basis**
+
 **The Column Variables are described in the following table.**
 
 |Column Index |Column Names | Variable Description |
