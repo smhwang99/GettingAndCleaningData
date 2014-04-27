@@ -10,7 +10,7 @@
 #####3. source "run_analysis.R"
 #####4. The tidy Data is output at current directory with filename "tidyData.txt"
 
-**Note that if Sumsung Galaxy Data Sets are already in current directory, you need to comment out lines 7-9 of the script and directly go to step 3**
+**Note that if Sumsung Galaxy Data Sets are already in current directory, you need to comment out lines 7-9 of the script first**
 
 *The detail descriptions of variables, the data, and the transformations or work that had been performed to clean up the data in "tidyData.txt" is in "CodeBook.md" file located in the same directory as README.md file*
 
